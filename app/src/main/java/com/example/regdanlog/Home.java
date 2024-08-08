@@ -33,6 +33,8 @@ public class Home extends AppCompatActivity {
                 Boolean checkEmailPassword = db.checkEmailPassword(email,password);
                 if (checkEmailPassword) {
                     Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Home.this, Utama.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
