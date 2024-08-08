@@ -18,9 +18,9 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
-        etRegEmail = findViewById(R.id.etEmail);
-        etRegPassword = findViewById(R.id.etPassword);
-        btnRegRegister = findViewById(R.id.btnLogin);
+        etRegEmail = findViewById(R.id.etRegEmail);
+        etRegPassword = findViewById(R.id.etRegPassword);
+        btnRegRegister = findViewById(R.id.btnRegRegister);
         db = new DatabaseHelper(this);
 
         btnRegRegister.setOnClickListener(new View.OnClickListener() {
